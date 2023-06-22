@@ -39,12 +39,12 @@ This is demonstration of a State Machine with Lambda, SNS, SQS and S3. The proce
     * integration_lambda.py (integration_lambda.zip)
 * Upload the ASL file state-machine.asl.json to bellflower/cft/state-machine
 * Create the cross-stack using the template custom-resource-lambda-stack.yaml by using the S3 url and pass the appropriate parameters and note the cross stack name.
-* Open SAM CLI and run the following command:
+* Clone the repository https://github.com/subhamay-cloudworks/0038-bellflower-sam and from the same directory run the following SAM CLI command:
 ```
 sam build
 ```
 
-* From the SAM CLI execute the following command to deploy the stack by passing the appropriate parameters:
+* From the same directory execute the following SAM CLI command to deploy the stack by passing the appropriate parameters:
 ```
 sam deploy --guided --capabilities "CAPABILITY_NAMED_IAM"
 ```
